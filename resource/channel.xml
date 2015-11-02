@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 平台初始化配置文件 每一个渠道对应一个ch节点 -->
+<channellist>
+    <channel chname="matrix" version="1.0.0" ch_zn_name="快发助手">
+        <!-- 渠道名称                          由渠道提供-->
+        <CHName>matrix</CHName>
+        <!-- 渠道版本号                        由渠道提供-->
+        <CHVersion>1.0.0</CHVersion>
+        <!-- 渠道分配appid                     由渠道提供-->
+        <CHAppID></CHAppID>
+        <!-- 渠道分配appKey                    由渠道提供-->
+        <CHAppKey></CHAppKey>
+        <!-- 渠道 Gamekey                     由渠道提供-->
+        <CHGameKey>test</CHGameKey>
+        <!-- 渠道 GameChannel                 由渠道提供-->
+        <CHGameChannel>0103</CHGameChannel>
+        <!-- 给平台预留的私有key 比如:cukey      由渠道提供 -->
+        <CHPrivateKey></CHPrivateKey>
+        <!-- 渠道分配的区服ID                   由渠道提供-->
+        <CHServerNumber></CHServerNumber>
+        <!-- 渠道扩展参数ID，无特殊需求不填，如快用支付需要的game值-->
+        <CHExtendID></CHExtendID>
+        
+        <!-- 是否自动登录 1是 0否 -->
+        <CPAutoLogin>0</CPAutoLogin>
+        <!-- 是否强制更新 1是 0否 -->
+        <CPForceUpdate>1</CPForceUpdate>
+        <!-- 是显示悬浮助手 1是 0否 -->
+        <CPShowPopover>1</CPShowPopover>
+        <!-- 悬浮助手位置 0渠道默认 1中左 2中右 3做上 4左下 5左下 6右下 -->
+        <CPPopoverPosiation>3</CPPopoverPosiation>
+        <!-- 游戏支持的屏幕方向 1竖屏 2倒屏 4横屏左边 8横屏右边 如果支持多种屏请做加法比如支持竖屏和横屏左则是5(1+4) 如果支持所有方向则是15-->
+        <CPScreenOrientation>1</CPScreenOrientation>
+        <!-- 是否调试模式 1.调试模式(debug)  0.发布模式:(release)  -->
+        <DEV_ISDebugModel>1</DEV_ISDebugModel>
+        <!-- 商品信息 -->
+        <DATA_Product>test:111|test01:112</DATA_Product>
+        <!-- 商户ID -->
+        <PAY_MerchantId></PAY_MerchantId>
+        <!-- 支付回调地址 -->
+        <PAY_NotifiyURL></PAY_NotifiyURL>
+        <!-- 商户私有信息 -->
+        <PAY_SellerPrivateInfo>商户私有信息</PAY_SellerPrivateInfo>
+        <!--阿里支付url type -->
+        <AlipayURLName>SDFSDFSDF</AlipayURLName>
+        <AlipayScheme>SDFSDFSDF</AlipayScheme>
+        <!--QQ钱包url type -->
+        <qqPayURLName>ASDASDA</qqPayURLName>
+        <qqPayScheme>SADSADSAD</qqPayScheme>
+        <!--最后出包的bundleid 不同渠道有不同要求 -->
+        <BundleID>com.forgame.AccessCoreDemo</BundleID>
+        <!--最后出包的bundleVersion 用于配置CFBundleVersion -->
+        <BundleVersion>1.0.0</BundleVersion>
+        <!-- 最出包的名称 -->
+        <BundleDisplayName>接入演示</BundleDisplayName>
+        <!--是否需要设置icon -->
+        <ICON_NEED_SETTING>1</ICON_NEED_SETTING>
+        <!-- 1:右上 2：右下 3:左上 4:左下  -->
+        <ICON_location>4</ICON_location>
+        <!-- 是否需要设置langch  -->
+        <LAUNCH_NEED_SETTING>1</LAUNCH_NEED_SETTING>
+        <!-- 1:竖屏(Portrait) 2横屏左(Landscate Left) 3横屏右边(Landscape Right)  -->
+        <LAUNCH_location>1</LAUNCH_location>
+    </channel>
+</channellist>
